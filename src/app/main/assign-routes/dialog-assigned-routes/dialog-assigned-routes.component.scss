@@ -1,0 +1,31 @@
+agm-map {
+    height: 60vh;
+    width: 60vw;
+}
+
+td,
+tr,
+th,
+button {
+    border: 1px solid #9ba7eb;
+    text-align: center;
+    width: max-content;
+}
+
+th {
+    padding: 1%;
+}
+
+button {
+    padding: 1%;
+}
+
+button,
+tr:nth-child(even) {
+    background-color: #bbdeff;
+}
+
+tbody {
+    display: inline-block;
+    overflow: scroll;
+}

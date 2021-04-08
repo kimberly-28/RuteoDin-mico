@@ -1,0 +1,84 @@
+<div fxLayoutAlign="center center">
+    <h1>Rutas Asignadas</h1>
+</div>
+
+<div fxLayoutAlign="row">
+    <div fxLayoutAlign="col">
+        <agm-map [latitude]="lat " [longitude]="lng " [zoom]="zoom " [mapTypeControl]='true' [fitBounds]="true ">
+            <!--      <agm-marker *ngFor="let coordinate of vehicleDetails; let i=index " [latitude]="coordinate.latitude " [longitude]="coordinate.longitude " [agmFitBounds]="true "></agm-marker> -->
+            <agm-polyline [visible]="true " [strokeWeight]="3 " [strokeColor]=" '#07b57a' ">
+                <agm-polyline-point *ngFor="let coordinate of ruta1 " [latitude]="coordinate.lat " [longitude]="coordinate.lng " [agmFitBounds]="true ">
+
+                </agm-polyline-point>
+            </agm-polyline>
+
+            <agm-polyline [visible]="true " [strokeWeight]="3 " [strokeColor]=" '#07b57a' ">
+                <agm-polyline-point *ngFor="let coordinate of ruta2 " [latitude]="coordinate.lat " [longitude]="coordinate.lng " [agmFitBounds]="true ">
+
+                </agm-polyline-point>
+            </agm-polyline>
+        </agm-map>
+    </div>
+
+    <div fxLayoutAlign="col" fxLayoutAlign="center center">
+        <table style="width: 100%; height: 70%; margin-left: 20%; ">
+            <tr>
+                <th>Usuario</th>
+                <th>Ruta</th>
+                <th>Tiempo Total</th>
+            </tr>
+            <tr>
+                <td>Juan Perez</td>
+                <td>42</td>
+                <td>4 horas</td>
+            </tr>
+            <tr>
+                <td>María García</td>
+                <td>58</td>
+                <td>2 horas</td>
+            </tr>
+            <tr>
+                <td>Rodolfo Quintana</td>
+                <td>87</td>
+                <td>8 horas</td>
+            </tr>
+            <tr>
+                <td>Cristina Gonzalez</td>
+                <td>65</td>
+                <td>7 horas</td>
+            </tr>
+            <tr>
+                <td>Juan Perez</td>
+                <td>42</td>
+                <td>4 horas</td>
+            </tr>
+            <tr>
+                <td>María García</td>
+                <td>58</td>
+                <td>2 horas</td>
+            </tr>
+            <tr>
+                <td>Rodolfo Quintana</td>
+                <td>87</td>
+                <td>8 horas</td>
+            </tr>
+            <tr>
+                <td>Cristina Gonzalez</td>
+                <td>65</td>
+                <td>7 horas</td>
+            </tr>
+            <tr>
+                <td>Rodolfo Quintana</td>
+                <td>87</td>
+                <td>8 horas</td>
+            </tr>
+
+        </table>
+    </div>
+
+</div>
+
+<div fxLayoutAlign="end end">
+    <button mat-button mat-raised-button mat-dialog-close style="margin-right: 5%; background: rgb(243, 8, 8); color: honeydew;" class="excel"> Cancelar </button>
+    <button mat-button mat-raised-button mat-dialog-close style="background: rgb(54, 173, 54); color: honeydew;" class="excel"> Enviar </button>
+</div>

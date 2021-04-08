@@ -1,0 +1,30 @@
+td,
+tr,
+th,
+button {
+    border: 1px solid #9ba7eb;
+    text-align: center;
+    width: max-content;
+}
+
+th {
+    padding: 1%;
+}
+
+.excel {
+    margin: 5%;
+}
+
+button {
+    padding: 1%;
+}
+
+button,
+tr:nth-child(even) {
+    background-color: #bbdeff;
+}
+
+tbody {
+    display: inline-block;
+    overflow: scroll;
+}
