@@ -5,6 +5,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FuseSharedModule } from '@fuse/shared.module';
 import { RouteTrackingComponent } from './route-tracking/route-tracking.component';
 import { AssignRoutesComponent } from './assign-routes/assign-routes.component';
+import { VentasComponent } from './ventas/ventas.component';
 
 const routes: Routes = [
     {
@@ -12,6 +13,9 @@ const routes: Routes = [
     },
     {
         path:'route-tracking', component: RouteTrackingComponent
+    },
+    {
+        path:'ventas', component: VentasComponent
     },
 ];
 

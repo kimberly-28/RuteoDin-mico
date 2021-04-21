@@ -16,7 +16,6 @@ export class RouteTrackingComponent implements OnInit {
     {value: 'steak-0', viewValue: 'Tlahuac'},
     {value: 'pizza-1', viewValue: 'Guanajuato'},
     {value: 'tacos-2', viewValue: 'Queretaro'},
-
   ];
   
   lat = 23.8519757;

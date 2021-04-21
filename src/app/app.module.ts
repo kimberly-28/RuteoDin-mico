@@ -26,8 +26,9 @@ import {MatCardModule} from '@angular/material/card';
 import { AgmCoreModule } from '@agm/core';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
-
-
+import { VentasComponent } from './main/ventas/ventas.component';
+import { ChartsModule } from 'ng2-charts';
+import { DialogDetailsSalesComponent } from './main/ventas/dialog-details-sales/dialog-details-sales.component';
 
 const appRoutes: Routes = [
     {
@@ -42,9 +43,12 @@ const appRoutes: Routes = [
         AssignRoutesComponent,
         RouteTrackingComponent,
         DialogAssignedRoutesComponent,
+        VentasComponent,
+        DialogDetailsSalesComponent,
     ],
     entryComponents: [
-      DialogAssignedRoutesComponent
+      DialogAssignedRoutesComponent,
+      DialogDetailsSalesComponent
       ],
     imports     : [
         AppRoutingModule,
@@ -69,6 +73,7 @@ const appRoutes: Routes = [
         MatCardModule,
         MatFormFieldModule,
         MatSelectModule,
+        MatDialogModule,
         
         // Fuse modules
         FuseModule.forRoot(fuseConfig),
@@ -79,6 +84,9 @@ const appRoutes: Routes = [
 
         // App modules
         LayoutModule,
+
+        //Gráficos
+        ChartsModule
     ],
     bootstrap   : [
         AppComponent

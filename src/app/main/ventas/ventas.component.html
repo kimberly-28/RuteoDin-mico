@@ -1,0 +1,280 @@
+<div>
+
+    <div style="margin: 1%;" fxLayoutAlign="center center">
+
+        <h1>Ventas del día</h1>
+
+    </div>
+
+    <div style="width: 100%; height: 100%; padding-left: 1%; " fxLayoutAlign="right right">
+
+        <div style="width: 100%; height: auto;">
+
+            <div style="width: 50%; height: auto;  " fxLayoutAlign="space-between">
+
+                <mat-card style="background:     #e1e8ed;  height: 50%; ">
+
+                    <div style=" width: auto; height: auto; ">
+                        <mat-card class="view-alerts ">
+                            <mat-card-title fxLayoutAlign="center center">
+                                <div style="width: 20%; height: auto;">
+                                    <h1> Tláhuac</h1>
+                                </div>
+                                <div style="width: 50%; height: 100%;">
+                                    <h2> Planeada</h2>
+                                    <hr>
+                                    <h2> Ejecutada</h2>
+                                    <hr>
+                                    <h2> Rechazos</h2>
+                                </div>
+                                <div style="width: 50%; height: 100%;">
+                                    <h2>$65,600 MXN
+                                    </h2>
+                                    <hr>
+                                    <h2>$48,200 MXN
+                                        <mat-icon style="color: red;">
+                                            trending_down
+                                        </mat-icon>
+                                    </h2>
+                                    <hr>
+                                    <h2>$17,400 MXN</h2>
+                                </div>
+                            </mat-card-title>
+
+                            <div>
+                                <canvas baseChart [datasets]="lineChartData1 " [labels]="lineChartLabels " [options]="lineChartOptions " [colors]="lineChartColors " [legend]="lineChartLegend " [chartType]="lineChartType " id="graficoUno " (click)="openDialog() "></canvas>
+                            </div>
+                        </mat-card>
+                    </div>
+                </mat-card>
+
+                <mat-card style="background: #e1e8ed; height: 100%; ">
+
+                    <div style="width: auto; height: 100%; ">
+                        <mat-card class="view-alerts ">
+                            <mat-card-title fxLayoutAlign="center center">
+                                <div style="width: 20%; height: auto;">
+                                    <h1> Tultitlan</h1>
+                                </div>
+                                <div style="width: 40%; height: auto;">
+                                    <h2> Planeada</h2>
+                                    <hr>
+                                    <h2> Ejecutada</h2>
+                                    <hr>
+                                    <h2> Rechazos</h2>
+                                </div>
+                                <div style="width: 40%; height: auto;">
+                                    <h2>$75,200 MXN</h2>
+                                    <hr>
+                                    <h2>$75,200 MXN
+                                        <mat-icon style="color: 'rgba(63, 207, 65)';">trending_up</mat-icon>
+                                    </h2>
+                                    <hr>
+                                    <h2>$0,0 MXN</h2>
+                                </div>
+                            </mat-card-title>
+                            <div>
+                                <canvas baseChart [datasets]="lineChartData4 " [labels]="lineChartLabels " [options]="lineChartOptions " [colors]="lineChartColors " [legend]="lineChartLegend " [chartType]="lineChartType " (click)="openDialog() "></canvas>
+                            </div>
+                        </mat-card>
+                    </div>
+                </mat-card>
+
+            </div>
+
+            <div style="width: 50%; height: auto; " fxLayoutAlign="space-between ">
+                <mat-card style="background: #e1e8ed; height: 50%; ">
+                    <div style="width: auto; height: auto; ">
+                        <mat-card class="view-alerts ">
+                            <mat-card-title fxLayoutAlign="center center">
+                                <div style=" width: max-content; height: auto;">
+                                    <h1> Ceylan</h1>
+                                </div>
+                                <div style="width: 50%; height: 100%;">
+                                    <h2> Planeada</h2>
+                                    <hr>
+                                    <h2> Ejecutada</h2>
+                                    <hr>
+                                    <h2> Rechazos</h2>
+                                </div>
+                                <div style="width: 50%; height: 100%;">
+                                    <h2>$45,500 MXN</h2>
+                                    <hr>
+                                    <h2>$58,200 MXN
+                                        <mat-icon style="color: 'rgba(63, 207, 65)';">trending_up</mat-icon>
+                                    </h2>
+                                    <hr>
+                                    <h2>$0,0 MXN</h2>
+                                </div>
+                            </mat-card-title>
+                            <div>
+                                <canvas baseChart [datasets]="lineChartData3 " [labels]="lineChartLabels " [options]="lineChartOptions " [colors]="lineChartColors " [legend]="lineChartLegend " [chartType]="lineChartType " (click)="openDialog() "></canvas>
+                            </div>
+                        </mat-card>
+                    </div>
+                </mat-card>
+
+                <mat-card style="background: #e1e8ed; height: 50%; ">
+
+                    <div style="width: auto; height: auto; ">
+                        <mat-card class="view-alerts ">
+                            <mat-card-title fxLayoutAlign="center center">
+                                <div style="width: max-content; height: auto;">
+                                    <h1> Coacalco</h1>
+                                </div>
+                                <div style="width: 50%; height: 100%;">
+                                    <h2> Planeada</h2>
+                                    <hr>
+                                    <h2> Ejecutada</h2>
+                                    <hr>
+                                    <h2> Rechazos</h2>
+                                </div>
+                                <div style="width: 50%; height: 100%;">
+                                    <h2>$80,600 MXN</h2>
+                                    <hr>
+                                    <h2>$78,200 MXN
+                                        <mat-icon style="color: red;">
+                                            trending_down
+                                        </mat-icon>
+                                    </h2>
+                                    <hr>
+                                    <h2>$2,400 MXN</h2>
+                                </div>
+                            </mat-card-title>
+                            <div>
+                                <canvas baseChart [datasets]="lineChartData2 " [labels]="lineChartLabels " [options]="lineChartOptions " [colors]="lineChartColors " [legend]="lineChartLegend " [chartType]="lineChartType " (click)="openDialog() "></canvas>
+                            </div>
+                        </mat-card>
+                    </div>
+                </mat-card>
+
+
+            </div>
+
+        </div>
+
+        <div style="width: 100%; height: auto; padding-left: 1% ; padding-top: 1% ; margin-left: 2%;">
+
+            <mat-card style="width: max-content; height: auto; background: #e1e8ed; " class="alertas ">
+                <h1 fxLayoutAlign="center center ">Global</h1><br>
+
+                <!-- <mat-card>
+                    <b>Planeada:</b>
+                    <p>$266,900 MXN</p>
+                    <b>Ejecutada</b>
+                    <p>$241,800 MXN</p>
+                    <b> Rechazos:</b>
+                    <p>$25,100 MXN</p>
+                </mat-card> -->
+
+                <mat-card class="sale">
+                    <b>Condutor: </b>
+                    <p>Roberto Gomez</p>
+                    <b>Agencia: </b>
+                    <p>Tláhuac </p>
+                    <b>Venta: </b>
+                    <p>$ 3,000 MXN</p>
+                </mat-card>
+
+                <mat-card class="sale">
+                    <b>Condutor: </b> Roberto Gomez <br>
+                    <b>Agencia: </b> Tláhuac <br>
+                    <b>Venta: </b> $ 3,000 MXN
+                </mat-card>
+
+                <mat-card class="sale">
+                    <b>Condutor: </b> Roberto Gomez <br>
+                    <b>Agencia: </b> Tláhuac <br>
+                    <b>Venta: </b> $ 3,000 MXN
+                </mat-card>
+
+                <mat-card class="sale">
+                    <b>Condutor: </b> Roberto Gomez <br>
+                    <b>Agencia: </b> Tláhuac <br>
+                    <b>Venta: </b> $ 3,000 MXN
+                </mat-card>
+
+                <mat-card class="sale">
+                    <b>Condutor: </b> Roberto Gomez <br>
+                    <b>Agencia: </b> Tláhuac <br>
+                    <b>Venta: </b> $ 3,000 MXN
+                </mat-card>
+
+                <mat-card class="sale">
+                    <b>Condutor: </b> Roberto Gomez <br>
+                    <b>Agencia: </b> Tláhuac <br>
+                    <b>Venta: </b> $ 3,000 MXN
+                </mat-card>
+
+                <mat-card class="sale">
+                    <b>Condutor: </b> Roberto Gomez <br>
+                    <b>Agencia: </b> Tláhuac <br>
+                    <b>Venta: </b> $ 3,000 MXN
+                </mat-card>
+
+                <mat-card class="sale">
+                    <b>Condutor: </b> Roberto Gomez <br>
+                    <b>Agencia: </b> Tláhuac <br>
+                    <b>Venta: </b> $ 3,000 MXN
+                </mat-card>
+
+                <mat-card class="sale">
+                    <b>Condutor: </b> Roberto Gomez <br>
+                    <b>Agencia: </b> Tláhuac <br>
+                    <b>Venta: </b> $ 3,000 MXN
+                </mat-card>
+
+            </mat-card>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- <div style="width: 100%; height: 100%; ">
+
+    <div fxLayoutAlign="right right " style="width: 50%; height: 50%; ">
+        <mat-card style=" height: 100%; width: 100%; ">
+            <mat-card-title class="font-size-24 font-weight-300 line-height-1 ">Venta Planificada</mat-card-title>
+            <mat-card-content style="width: 100%; height: 100%; ">
+                <p class="font-size-24 font-weight-100 line-height-1 " style=" color: rgb(63, 207, 65); ">$ 650,000.00</p>
+            </mat-card-content>
+        </mat-card>
+        <mat-card style=" height: max-content; width: 50%; margin: 5%; " fxLayoutAlign="center center ">
+            <span class="font-size-24 font-weight-300 line-height-1 ">Venta Planificada</span>
+            <p class="font-size-24 font-weight-100 line-height-1 " style=" color: rgb(63, 207, 65); ">650.000$</p>
+        </mat-card>
+        <mat-card style=" height: max-content; width: 50%; margin: 5%; " fxLayoutAlign="center center ">
+            <span class="font-size-24 font-weight-300 line-height-1 ">Venta Planificada</span>
+            <p class="font-size-24 font-weight-100 line-height-1 " style=" color: rgb(63, 207, 65); ">650.000$</p>
+        </mat-card>
+    </div>
+
+    <div fxLayoutAlign="right right " style="width: 50%; height: auto; ">
+        <mat-card style=" height: max-content; width: 50%; margin: 5%; " fxLayoutAlign="center center ">
+            <span class="font-size-24 font-weight-300 line-height-1 ">Venta Ejecutada</span>
+            <p class="font-size-24 font-weight-100 line-height-1 " style=" color: rgb(63, 207, 65); ">650.000$</p>
+        </mat-card>
+        <mat-card style=" height: max-content; width: 50%; margin: 5%; " fxLayoutAlign="center center ">
+            <span class="font-size-24 font-weight-300 line-height-1 ">Venta Ejecutada</span>
+            <p class="font-size-24 font-weight-100 line-height-1 " style=" color: rgb(63, 207, 65); ">650.000$</p>
+        </mat-card>
+        <mat-card style=" height: max-content; width: 50%; margin: 5%; " fxLayoutAlign="center center ">
+            <span class="font-size-24 font-weight-300 line-height-1 ">Venta Ejecutada</span>
+            <p class="font-size-24 font-weight-100 line-height-1 " style=" color: rgb(63, 207, 65); ">650.000$</p>
+        </mat-card>
+    </div>
+
+    <div style="width: 100%; height: 100%; padding: 5% ">
+        <mat-card style="width: auto; height: auto; padding-top: 3%; ">
+            <span style="text-align: center; align-items: center; margin-bottom: 3%; " class="font-size-46 font-weight-300 line-height-1 ">Ventas del día</span>
+            <div style="width: auto; height: auto; padding-top: 3%; ">
+                <canvas baseChart [datasets]="lineChartData " [labels]="lineChartLabels " [options]="lineChartOptions " [colors]="lineChartColors " [legend]="lineChartLegend " [chartType]="lineChartType " (chartHover)="chartHovered($event)
+                        " (click)="openDialog() " (chartClick)="chartClicked($event) "></canvas>
+            </div>
+        </mat-card>
+    </div>
+
+</div> -->

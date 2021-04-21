@@ -22,6 +22,14 @@ export const navigation: FuseNavigation[] = [
                 type     : 'item',
                 icon     : 'gps_fixed',
                 url      : '/route-tracking',   
+            },
+            {
+                id       : 'ventas',
+                title    : 'Sample',
+                translate: 'Ventas',
+                type     : 'item',
+                icon     : 'store',
+                url      : '/ventas',   
             }
         ]
     }
